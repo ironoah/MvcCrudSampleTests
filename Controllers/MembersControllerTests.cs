@@ -41,8 +41,13 @@ namespace MvcCrudSample.Controllers.Tests
         [TestMethod()]
         public void CreateTest()
         {
+            // arrange
             var ctrl = new MembersController();
+            
+            // act
             var result = ctrl.Create(new Member { name = "test", birth = new DateTime(2001,1,1), age=18 }) as ViewResult;
+
+            // assert
             Assert.AreEqual(String.Empty, result.ViewName); // fail
         }
 
