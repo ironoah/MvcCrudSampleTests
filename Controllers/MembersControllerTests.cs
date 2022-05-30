@@ -39,7 +39,7 @@ namespace MvcCrudSample.Controllers.Tests
         }
 
         [TestMethod()]
-        public void CreateTest2()
+        public void CreateTest()
         {
             // arrange
             var ctrl = new MembersController();
